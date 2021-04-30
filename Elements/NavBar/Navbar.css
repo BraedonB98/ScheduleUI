@@ -1,52 +1,52 @@
 /*CSS file for the homepage
 Setting colors*/
 :root{
-    --mainBackgroundColor:#393e46;
-    --subItemOneColor : #00adb5;
-    --TextColorOne : #aad8d3;
-    --TextColorTwo: #eeeeee; 
+  --mainBackgroundColor:#393e46;
+  --subItemOneColor : #00adb5;
+  --TextColorOne : #aad8d3;
+  --TextColorTwo: #eeeeee; 
+  }
+  
+  
+  html{
+    background-color: var(--mainBackgroundColor);
+  }
+  
+  body{
+    margin : 0;
+  }
+  nav{
+    margin : 0;
+  }
+  
+  
+  
+  /*-------------------------------- Nav Bar CSS---------------------------------------------------------------*/
+  #navbar {
+      overflow: hidden;
+      background-color: var(--subItemOneColor);
     }
-    
-    
-    html{
-      background-color: var(--mainBackgroundColor);
+    #navbar a {
+      float: left;
+      display: block;
+      color: var(--TextColorOne);
+      text-align: center;
+      padding: 14px;
+      text-decoration: none;
     }
-    
-    body{
-      margin : 0;
+    /* Page content */
+    .content {
+      padding: 16px;
     }
-    nav{
-      margin : 0;
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
     }
-    
-    
-    
-    /*-------------------------------- Nav Bar CSS---------------------------------------------------------------*/
-    #navbar {
-        overflow: hidden;
-        background-color: var(--subItemOneColor);
-      }
-      #navbar a {
-        float: left;
-        display: block;
-        color: var(--TextColorOne);
-        text-align: center;
-        padding: 14px;
-        text-decoration: none;
-      }
-      /* Page content */
-      .content {
-        padding: 16px;
-      }
-      .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-      }
-      .sticky + .content {
-        padding-top: 60px;
-      }
-      #rightAlignNav{
-        display:flex;
-        flex-direction: row-reverse;  
-      } 
+    .sticky + .content {
+      padding-top: 60px;
+    }
+    #rightAlignNav{
+      display:flex;
+      flex-direction: row-reverse;  
+    } 

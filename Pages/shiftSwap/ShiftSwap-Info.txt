@@ -1,0 +1,6 @@
+This will allow employees to request a shift to taken
+It will allow employees to accept others shifts
+	if their account allows them to take the job description(ie:if employee under 18 cant drive, if not PIC, cant take a PIC shift) 
+This will also send a notification to manager account for the store employees are registered at if shifts swap.
+Will also check location of employees home store and the store of request
+	will not let them sign up if over 25 miles away

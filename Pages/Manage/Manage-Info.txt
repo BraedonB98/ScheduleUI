@@ -1,0 +1,2 @@
+Allows for manager functions when user is signed in with manager permissions, also logs all changes with user info
+so if someone does something they are not supposed to we can trace back the issue

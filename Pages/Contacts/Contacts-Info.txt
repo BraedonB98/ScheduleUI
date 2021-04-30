@@ -1,0 +1,4 @@
+Here users will be able to see a list of all the other employees who work at their store and their contact info
+
+Show users employees based on the store
+Show users employees positions, phone number

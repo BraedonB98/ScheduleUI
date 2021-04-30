@@ -1,0 +1,4 @@
+Here users will be able to access their individule schedules
+
+there will be a link to swap shifts here, 
+they will be able to see an estimation on pay that week
