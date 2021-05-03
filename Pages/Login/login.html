@@ -20,20 +20,19 @@
             <a href="../Manage/manage.html">Manage</a>
           </div>
         </div>
-        <H1>Login</H1>
-        <form action="action_page.php" method="post">
+        <form  id="formId">
           <div class="imgcontainer">
             <img src="../../Photos/JJLogo.png" alt="JJ logo" class="avatar">
           </div>
         
           <div class="container">
             <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
+            <input type="text" placeholder="Enter Username" id="userName" name="uname" required>
         
             <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+            <input type="password" placeholder="Enter Password" id="passWord" name="psw" required>
         
-            <button type="submit">Login</button>
+            <button type="submit" id="loginsubmitbutton">Login</button>
             <label>
               <input type="checkbox" checked="checked" name="remember"> Remember me <!--Use local storage to remember username if checked-->
             </label>
