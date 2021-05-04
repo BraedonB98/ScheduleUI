@@ -1,0 +1,35 @@
+
+Setting colors*/
+:root{
+  --mainBackgroundColor:#393e46;
+  --subItemOneColor : #00adb5;
+  --TextColorOne : #aad8d3;
+  --TextColorTwo: #eeeeee; 
+  }
+
+
+
+/* Fake image */
+.row{
+    width : 90%;
+    padding-left: 5%;
+ }
+.fakeimg {
+    background-color: #aaa;
+    width: 95%;
+    padding: 2.5%;
+    border-radius: 15px;
+  }
+  /* Add a card effect for articles */
+.card {
+    background-color: var(--subItemOneColor);
+    padding: 2.5%;
+    margin-top: 0.5%;
+    border-radius: 15px;
+  }
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

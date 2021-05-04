@@ -9,20 +9,45 @@ class User{
     }
 }
 
+const usr0 = new User('GM','0','GM');//creating profiles and making test profiles
+const usr1 = new User('AM','1','AM');
+const usr2 = new User('PIC','2','PIC');
+const usr3 = new User('IS','3','IS');
+const usr4 = new User('D','4','D');
+var users = [usr0 , usr1 , usr2 , usr3 , usr4];
 
 function loginSubmit()
 {
-    console.log("here");
     event.preventDefault();
-    username = document.getElementById("userName").value
-    password = document.getElementById("passWord").value
-    console.log(username);
-    console.log(password);
+    
+    var username = document.getElementById("userName").value
+    var password = document.getElementById("passWord").value
+    var rememberMe = document.getElementById("remember").checked
+    for(i in users)
+    {
+        
+        if(users[i].username == username)
+        {
+            if(users[i].password == password)
+            {
+                console.log("sign in success")
+                if(rememberMe)
+                {
+                    //save to local storage
+                }
+                //save to temp memory that the user is signed in to the user
+            }
+            else
+            {
+                console.log("sign in fail")
+            }
+        }
+    }
 }
 
 function defaultPage()
 {
-    //put the check if there is a username and password saved in local memory here.
+    //check if there is already a user saved in memory, if so enter in values to forms
 }
 defaultPage();
 
