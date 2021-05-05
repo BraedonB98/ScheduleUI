@@ -1,6 +1,7 @@
 //remember me = save username and password to local storage
 var form = document.getElementById("formId")
-
+var memStorage = window.sessionStorage;
+var locStorage = window.localStorage;
 class User{
     constructor(username,password,job){
         this.username=username;
@@ -16,6 +17,8 @@ const usr3 = new User('IS','3','IS');
 const usr4 = new User('D','4','D');
 var users = [usr0 , usr1 , usr2 , usr3 , usr4];
 
+
+
 function loginSubmit()
 {
     event.preventDefault();
@@ -30,16 +33,23 @@ function loginSubmit()
         {
             if(users[i].password == password)
             {
-                console.log("sign in success")
+                
                 if(rememberMe)
                 {
                     //save to local storage
+                    localStorage.setItem('user',users[i]);
+                }
+                else{
+                    //remove from local storage
                 }
                 //save to temp memory that the user is signed in to the user
+                console.log("sign in success")
+                window.location.replace = "https://jj2628.netlify.app/";
+                memStorage.setItem('user',users[i]);
             }
             else
             {
-                console.log("sign in fail")
+                console.log("sign in fail");
             }
         }
     }
@@ -47,6 +57,20 @@ function loginSubmit()
 
 function defaultPage()
 {
+    if(locStorage.getItem('user')!=null)
+    {
+        var user = locStorage.getItem('user');
+        console.log(user.username);
+        document.getElementById('userName').value = user.username;
+        document.getElementById('passWord').value = locStorage.getItem('user').password;
+    }
+    if(memStorage.getItem('user')!=null)
+    {
+        console.log('I am signed in'); //setup an account page to view with a log out button
+    }
+    else{
+        console.log("need to sign in")
+    }
     //check if there is already a user saved in memory, if so enter in values to forms
 }
 defaultPage();

@@ -25,3 +25,10 @@
   button:hover, a:hover {
     opacity: 0.7;
   }
+
+  .notVisible{
+    visibility: hidden;
+  }
+  .visible{
+    visibility: visible;
+  }

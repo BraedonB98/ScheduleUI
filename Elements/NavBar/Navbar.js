@@ -12,3 +12,27 @@ function topNavBarStick() {
   }
 }
 
+var memStorage = window.sessionStorage;
+var locStorage = window.localStorage;
+
+function defaultPage()
+{
+    if(memStorage.getItem('user')!=null)
+    {
+        document.getElementById('rightAlignNav').innerHTML = ("<a href=\"#\" id = logoutNavButton>Log Out</a> <a href=\"../Manage/manage.html\">Manage</a>");
+    }
+    else{
+      document.getElementById('rightAlignNav').innerHTML = ("<a href=\"../Login/login.html\" id = loginNavButton>Log In</a>")
+    }
+    //check if there is already a user saved in memory, if so enter in values to forms
+}
+
+function logout()
+{
+  console.log("logging out");
+  memStorage.removeItem('user');
+  location.reload();
+}
+defaultPage();
+
+document.querySelector("#logoutNavButton").addEventListener("click", logout);
