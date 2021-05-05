@@ -44,7 +44,7 @@ function loginSubmit()
                 }
                 //save to temp memory that the user is signed in to the user
                 console.log("sign in success")
-                window.location.replace = "https://jj2628.netlify.app/index.html";
+                window.location.replace("https://jj2628.netlify.app/index.html");
                 memStorage.setItem('user',users[i]);
             }
             else
