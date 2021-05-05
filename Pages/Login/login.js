@@ -37,7 +37,7 @@ function loginSubmit()
                 if(rememberMe)
                 {
                     //save to local storage
-                    localStorage.setItem('user',users[i]);
+                    localStorage.setItem('user',JSON.stringify(users[i]));
                 }
                 else{
                     //remove from local storage
@@ -45,7 +45,7 @@ function loginSubmit()
                 //save to temp memory that the user is signed in to the user
                 console.log("sign in success")
                 window.location.replace("https://jj2628.netlify.app/index.html");
-                memStorage.setItem('user',users[i]);
+                memStorage.setItem('user',JSON.stringify(users[i]));
             }
             else
             {
@@ -59,7 +59,7 @@ function defaultPage()
 {
     if(locStorage.getItem('user')!=null)
     {
-        var user = locStorage.getItem('user');
+        var user = JSON.parse(locStorage.getItem('user'));
         console.log(user.username);
         document.getElementById('userName').value = user.username;
         document.getElementById('passWord').value = locStorage.getItem('user').password;
