@@ -33,6 +33,6 @@ function logout()
   memStorage.removeItem('user');
   location.reload();
 }
-defaultPage();
+//defaultPage();
 
 //document.querySelector("#logoutNavButton").addEventListener("click", logout);
