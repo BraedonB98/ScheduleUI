@@ -22,7 +22,7 @@ function defaultPage()
         document.getElementById('rightAlignNav').innerHTML = ("<a href=\"#\" id = logoutNavButton>Log Out</a> <a href=\"../Manage/manage.html\">Manage</a>");
     }
     else{
-      document.getElementById('rightAlignNav').innerHTML = ("<a href=\"https://jj2628.netlify.app/pages/login/login\" id = loginNavButton onclick=\"logout();\">Log In</a>")
+      document.getElementById('rightAlignNav').innerHTML = ("<a href=\"https://jj2628.netlify.app/pages/login/login\" id = loginNavButton type=\"button\" onclick=\"logout();\">Log In</a>")
     }
     //check if there is already a user saved in memory, if so enter in values to forms
 }
