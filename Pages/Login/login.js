@@ -61,6 +61,7 @@ function defaultPage()
     {
         var user = JSON.parse(locStorage.getItem('user'));
         console.log(user.username);
+        console.log(user.password);
         document.getElementById('userName').value = user.username;
         document.getElementById('passWord').value = locStorage.getItem('user').password;
     }
