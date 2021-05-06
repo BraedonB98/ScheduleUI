@@ -40,7 +40,7 @@ function loginSubmit()
                     localStorage.setItem('user',JSON.stringify(users[i]));
                 }
                 else{
-                    //remove from local storage
+                    locStorage.removeItem('user')
                 }
                 //save to temp memory that the user is signed in to the user
                 console.log("sign in success")
@@ -63,7 +63,7 @@ function defaultPage()
         console.log(user.username);
         console.log(user.password);
         document.getElementById('userName').value = user.username;
-        document.getElementById('passWord').value = locStorage.getItem('user').password;
+        document.getElementById('passWord').value = user.password;
     }
     if(memStorage.getItem('user')!=null)
     {
