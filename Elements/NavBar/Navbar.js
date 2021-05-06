@@ -19,7 +19,7 @@ function defaultPage()
 {
     if(memStorage.getItem('user')!=null)
     {
-        document.getElementById('rightAlignNav').innerHTML = ("<a href=\"#\" id = logoutNavButton>Log Out</a> <a href=\"../Manage/manage.html\">Manage</a>");
+        document.getElementById('rightAlignNav').innerHTML = ("<a href=\"#\" id = logoutNavButton>Log Out</a> <a href=\"https://jj2628.netlify.app/pages/manage/manage\">Manage</a>");
     }
     else{
       document.getElementById('rightAlignNav').innerHTML = ("<a href=\"https://jj2628.netlify.app/pages/login/login\" id = loginNavButton type=\"button\" onclick=\"logout();\">Log In</a>")
