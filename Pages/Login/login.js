@@ -10,12 +10,7 @@ class User{
     }
 }
 
-const usr0 = new User('GM','0','GM');//creating profiles and making test profiles
-const usr1 = new User('AM','1','AM');
-const usr2 = new User('PIC','2','PIC');
-const usr3 = new User('IS','3','IS');
-const usr4 = new User('D','4','D');
-var users = [usr0 , usr1 , usr2 , usr3 , usr4];
+var users = [new User('GM','0','GM') , new User('AM','1','AM') , new User('PIC','2','PIC') , new User('IS','3','IS') , new User('D','4','D')];
 
 
 
