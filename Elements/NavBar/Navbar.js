@@ -19,10 +19,10 @@ function defaultPage()
 {
     if(memStorage.getItem('user')!=null)
     {
-        document.getElementById('rightAlignNav').innerHTML = ("<a href=\"#\" id = logoutNavButton>Log Out</a> <a href=\"https://jj2628.netlify.app/pages/manage/manage\">Manage</a>");
+        document.getElementById('rightAlignNav').innerHTML = ("<a href=\"#\"type=\"button\" onclick=\"logout();\" id = logoutNavButton>Log Out</a> <a href=\"https://jj2628.netlify.app/pages/manage/manage\">Manage</a>");
     }
     else{
-      document.getElementById('rightAlignNav').innerHTML = ("<a href=\"https://jj2628.netlify.app/pages/login/login\" id = loginNavButton type=\"button\" onclick=\"logout();\">Log In</a>")
+      document.getElementById('rightAlignNav').innerHTML = ("<a href=\"https://jj2628.netlify.app/pages/login/login\" id = loginNavButton >Log In</a>")
     }
     //check if there is already a user saved in memory, if so enter in values to forms
 }
