@@ -36,4 +36,4 @@ function logout()
 
 defaultPage();
 
-//document.querySelector("#logoutNavButton").addEventListener("click", logout);
+document.querySelector("#logoutNavButton").addEventListener("click", logout);
