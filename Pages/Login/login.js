@@ -1,4 +1,4 @@
-//remember me = save username and password to local storage
+//Normal Sign in with JJ2628 Account
 var form = document.getElementById("formId")
 var memStorage = window.sessionStorage;
 var locStorage = window.localStorage;
@@ -9,11 +9,7 @@ class User{
         this.job=job;
     }
 }
-
 var users = [new User('GM','0','GM') , new User('AM','1','AM') , new User('PIC','2','PIC') , new User('IS','3','IS') , new User('D','4','D')];
-
-
-
 function loginSubmit()
 {
     event.preventDefault();
@@ -49,7 +45,6 @@ function loginSubmit()
         }
     }
 }
-
 function defaultPage()
 {
     if(locStorage.getItem('user')!=null)
@@ -70,12 +65,14 @@ function defaultPage()
     //check if there is already a user saved in memory, if so enter in values to forms
 }
 defaultPage();
-
-
-
-
-
-
-
-
 document.querySelector("#loginsubmitbutton").addEventListener("click", loginSubmit);
+
+
+//---------------------------------------------sign in with google functionality -------------------------------------------------------------
+function onSignIn(googleUser) {
+    var profile = googleUser.getBasicProfile();
+    console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+    console.log('Name: ' + profile.getName());
+    console.log('Image URL: ' + profile.getImageUrl());
+    console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+  }
