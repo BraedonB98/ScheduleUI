@@ -1,5 +1,8 @@
-console.log("I am attempting to sign in here");
-var profile = googleUser.getBasicProfile();
+var memStorage = window.sessionStorage;
+var locStorage = window.localStorage;
+
+var profile = JSON.parse(memStorage.getItem("googleUser"));
+
 console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
 console.log('Name: ' + profile.getName());
 console.log('Image URL: ' + profile.getImageUrl());
