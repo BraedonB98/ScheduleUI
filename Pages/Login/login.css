@@ -76,3 +76,7 @@ form {
       width: 100%;
     }
   }
+
+  .googleButton{
+    margin-left: 10%;
+  }
