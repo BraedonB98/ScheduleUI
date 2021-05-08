@@ -6,6 +6,7 @@ function defaultPage()
 {
     if(memStorage.getItem('user')!=null)
     {
+        console.log(memStorage.getItem('user'));
         document.getElementById('content').innerHTML = "<H1>Welcome User<H1>";
     }
     else{
