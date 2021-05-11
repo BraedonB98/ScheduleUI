@@ -33,3 +33,24 @@ Setting colors*/
     display: table;
     clear: both;
   }
+  .pageHeader{
+    display:flex;
+    align-content: left;
+    width : 100%;
+    margin-left:5%
+    /* --------------------------------------------make this aligned on the right hand side--------------------------------------------- */
+  }
+  #newAnnouncementButton{
+    display: flex;
+    align-self:right;
+    height : 50%;
+    margin-top:2%;
+    margin-left:67%;
+
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5%;
+  }
