@@ -17,11 +17,3 @@ function defaultPage()
     //check if there is already a user saved in memory, if so enter in values to forms
 }
 defaultPage();
-let map;
-
-function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: -34.397, lng: 150.644 },
-    zoom: 8,
-  });
-}
