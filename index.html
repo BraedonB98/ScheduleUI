@@ -6,6 +6,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://apis.google.com/js/platform.js" async defer></script>
         <meta name="google-signin-client_id" content="757678233252-h7jnt606a4slplnh1d1at42aaderj721.apps.googleusercontent.com">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     </head>
     <body>
         <!--Navigation Bar-->
@@ -24,7 +25,9 @@
         </div>
         <div id = "content">
           <H1>Welcome to the JJ2628 DashBoard!</H1>
-        </div>
+          <div id="map"></div>
+            <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+          </div>
     </body>
     <script src="Elements/NavBar/Navbar.js"></script> <!--navbar JS-->
     <script src="Pages/HomePage/Homepage.js"></script> <!--Homepage JS-->
