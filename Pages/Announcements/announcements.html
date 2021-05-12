@@ -23,12 +23,20 @@
           <H1>Announcements</H1> 
           <button id="newAnnouncementButton">New Announcement</button>
         </div>
-        <div class="row">
+        <div id = "newAnnouncementForm">
+            <label for="subject"><b>Title</b></label>
+            <input type="text" placeholder="subject" id="subject" name="subject" required>
+            <label for="content"><b>content</b></label>
+            <input type="text" placeholder="content" id="content" name="content" required>
+        
+            <button type="submit" id="newAnnouncementSubmitButton">Post Announcement</button>
+        </div>
+        <div class="row" id="announcementDiv">
           <div class="card">
-            <h2>Test Announcement Styling</h2>
-            <h5>Jimmy Johns, May 3, 2020</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Here is the styling for what an announcement would look like, However I still need to add an add announcement button along with the permissions check to only allow for managers to post and to only let it be viewable when signed in</p>
+            <h2 class = "littlePadding">Test Announcement Styling</h2>
+            <h5 class = "littlePadding" >Jimmy Johns, May 3, 2020</h5>
+            <!--<div class="fakeimg" style="height:200px;">Image</div>-->
+            <p class = "littlePadding">Here is the styling for what an announcement would look like, However I still need to add an add announcement button along with the permissions check to only allow for managers to post and to only let it be viewable when signed in</p>
           </div>
         </div>
         

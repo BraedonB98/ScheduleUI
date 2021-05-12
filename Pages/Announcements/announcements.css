@@ -54,3 +54,19 @@ Setting colors*/
     cursor: pointer;
     border-radius: 5%;
   }
+
+  #newAnnouncementForm{
+    display:none;
+    background-color: var(--subItemOneColor);
+    padding: 2.5%;
+    margin :5%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    border-radius: 5px;
+    
+  }
+  .littlePadding{
+    padding:0;
+    margin:0;
+    padding-bottom: 2px;
+  }
