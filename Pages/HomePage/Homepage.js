@@ -17,3 +17,11 @@ function defaultPage()
     //check if there is already a user saved in memory, if so enter in values to forms
 }
 defaultPage();
+function myMap() {
+    var mapProp= {
+      center:new google.maps.LatLng(39.365890,-104.861590),
+      zoom:5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);}
+
+    
