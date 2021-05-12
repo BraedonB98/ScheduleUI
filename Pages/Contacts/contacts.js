@@ -8,6 +8,8 @@ function defaultPage()
     {
         console.log('I am signed in'); //setup an account page to view with a log out button
         document.getElementById('contacts').className= "visible";
+        document.getElementById('noContacts').className= "notVisible";
+        
     }
     else{
         console.log("need to sign in")
