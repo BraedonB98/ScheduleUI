@@ -1,5 +1,12 @@
 #googleMap{
-    width:90%;
-    height:400px
+    width:85%;
+    height:400px;
     margin-left: 5%;
+    padding-left: 5%;
 }
+.pageHeader{
+    display:flex;
+    align-content: left;
+    width : 100%;
+    margin-left:5%
+  }
