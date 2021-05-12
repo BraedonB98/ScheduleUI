@@ -9,7 +9,8 @@ function defaultPage()
         userInfo = JSON.parse(memStorage.getItem('user'));
         console.log(userInfo.username)
         console.log(memStorage.getItem('user'));
-        document.getElementById('content').innerHTML = `<H1>Welcome ${userInfo.username}<H1>`;
+        document.getElementById('content').innerHTML = `<div class = pageHeader><H1>Welcome ${userInfo.username}<H1></div>
+        <div id="googleMap" ></div>`;
     }
     else{
         console.log("need to sign in")
