@@ -38,7 +38,6 @@ Setting colors*/
     align-content: left;
     width : 100%;
     margin-left:5%
-    /* --------------------------------------------make this aligned on the right hand side--------------------------------------------- */
   }
   #newAnnouncementButton{
     display: flex;

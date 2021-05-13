@@ -1,0 +1,20 @@
+.pageHeader{
+    display:flex;
+    align-content: left;
+    width : 100%;
+    margin-left:5%
+  }
+  .card {
+    background-color: var(--subItemOneColor);
+    padding: 2.5%;
+    margin-top: 0.5%;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .fakeimg {
+    background-color: #aaa;
+    width: 95%;
+    padding: 2.5%;
+    border-radius: 15px;
+  }
