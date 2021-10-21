@@ -1,0 +1,19 @@
+Theme
+- Remove Jimmy Johns theme and set to nutral theme
+
+Map
+- Set map location be set by manager in settings
+
+Schedule
+- Finish schedule UI
+- Set up database that will save schedule
+- Write Manager UI for designing the schedule
+- Write Employee UI for availablitity 
+- Add twilio to send notifications to members about schedule
+
+Announcements
+- Finish adding database that holds announcements
+- 
+
+Contact
+- Data base of manager info that updates automaticly
